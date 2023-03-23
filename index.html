@@ -1,4 +1,10 @@
 <!-- www.dabipyeung.com/soaply -->
+<!--
+수정사항
+1.special offers 상품 설명글 반응형 행수 줄이기
+2.json cors 오류 수정
+
+-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -249,15 +255,101 @@
       </div>
     </section>
 
+    <!-- Gallery Section -->
+    <section class="gallery-section section">
+      <div class="container">
+        <div class="title-box">
+          <h2 class="section-title">the Gallery From Clients</h2>
+          <a href="#" class="common-btn">전체보기</a>
+        </div>
 
+        <div class="gallery-wrapper">
+          <div class="grid">
+            <div class="box-sizer"></div>
+            <!-- <div class="grid-item"><a href="#"><img src="images/gallery-image-1.jpeg" alt=""></a></div>
+            <div class="grid-item"><a href="#"><img src="images/gallery-image-2.jpeg" alt=""></a></div>
+            <div class="grid-item"><a href="#"><img src="images/gallery-image-3.jpeg" alt=""></a></div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="insta-section section">
+      <div class="container">
+        <div class="insta-wrapper">
+        <div class="insta-left-image insta-image">
+          <div class="insta-grid-2">
+            <img src="images/insta-image-1.jpeg" alt="" id="fh">
+            <img src="images/insta-image-2.jpeg" alt="" id="h">
+          </div>
+          <div class="insta-grid-1">
+            <img src="images/insta-image-3.jpeg" alt="">
+          </div>
+        </div>
+
+        <div class="insta-info">
+          <h4>Follow Our Instagram for 25% Discount</h4>
+          <a href="#"><i class="ri-instagram-fill"></i> marshall</a>
+          <a href="#" class="common-btn">25% 할인받기</a>
+        </div>
+
+        <div class="insta-right-image insta-image">
+          <div class="insta-grid-1">
+            <img src="images/insta-image-4.jpeg" alt="">
+          </div>
+          <div class="insta-grid-2">
+            <img src="images/insta-image-5.jpeg" alt="">
+            <img src="images/insta-image-6.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!---------------------- Footer Section ------------------------>
+    <footer>
+      <div class="container">
+        <div class="footer-upper">
+          <div class="footer-logo">
+            <a href="#"><img src="images/logo.svg" alt=""></a>
+          </div>
+          <div class="footer-info">
+            <ul class="footer-nav">
+              <li><a href="#">ChangeLog</a></li>
+              <li><a href="#">Licencing</a></li>
+              <li><a href="#">StyleGuide</a></li>
+            </ul>
+            <ul class="footer-sns">
+              <li><a href="#"><img src="images/sns-icon-1.svg" alt=""></a></li>
+              <li><a href="#"><img src="images/sns-icon-2.svg" alt=""></a></li>
+              <li><a href="#"><img src="images/sns-icon-3.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <span class="footer-line"></span>
+        <div class="footer-lower">
+          <span class="footer-copy">&copy; Copyright 2023</span>
+          <span class="byline">Powered by <a href="#">MongProject- Develope By victory</a></span>
+        </div>
+
+      </div>
+    </footer>
 
   </div> 
+  <!-- JQuery LINK -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
+ <!-- Masonry Plugin Link -->
+ <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+ <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
   <!-- Swiper Slider Link -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/requestProducts.js"></script>
+  <script src="js/requestGallery.js"></script>
+
   <!---------------- Javascript Link ------------------->
   <script src="JS/userInterface.js"></script>
+
 <script>
   const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -275,12 +367,12 @@
     prevEl: '.swiper-button-prev',
   },
   // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
 });
 </script>
 
-<script src="JS/requestProducts.js"></script>
+<!-- <script src="JS/requestProducts.js"></script> -->
 </body>
 </html>
