@@ -76,8 +76,25 @@ $(document).ajaxComplete(function(){
       shortenText();
     });
   });
+});
 
 
+// TOP-BTN
+
+
+const topBtn = document.querySelector('.top-btn')
+
+window.addEventListener('scroll', function(){
+  const scrY = window.scrollY;
+  if(scrY > 50){
+    topBtn.style.display='block';
+  }else{
+    topBtn.style.display='none';
+  };
+
+});
+topBtn.addEventListener('click', function(){
+  window.scrollTo(0, 0)
 });
 
 
