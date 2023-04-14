@@ -24,9 +24,12 @@
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
  <!-- Main Stylesheet link -->
- <link rel="stylesheet" href="CSS/common.css">
- <link rel="stylesheet" href="CSS/main.css">
- <link rel="stylesheet" href="CSS/responsive.css">
+ <link rel="stylesheet" href="/common_template/CSS/header.css">
+ <link rel="stylesheet" href="/common_template/CSS/common.css">
+ <link rel="stylesheet" href="/common_template/CSS/main.css">
+ <link rel="stylesheet" href="/common_template/CSS/responsive.css">
+
+  
 
 </head>
 <body>
@@ -34,28 +37,15 @@
     <!------------------ Header  ------------------>
    <header id="header" class="header">
      <div class="container">
-      <nav class="nav-wrapper">
-       <ul class="nav-lists">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Review</a></li>
-        <li><a href="#">Gallery</a></li>
-       </ul>
-      </nav>
+      
+
+      <?php include $_SERVER['DOCUMENT_ROOT']."/common_template/include/nav.php"; ?>
       <div class="logo">
-       <a href="#"><img src="images/logo.svg" alt="soaply"></a>
+       <a href="/conmon_template/index.php"><img src="images/logo.svg" alt="soaply"></a>
       </div>
-      <ul class="info">
-       <li class="sns">
-        <ul>
-         <li><a href="#"><img src="images/sns-icon-1.svg" alt="instagram"></a></li>
-         <li><a href="#"><img src="images/sns-icon-2.svg" alt="facebook"></a></li>
-         <li><a href="#"><img src="images/sns-icon-3.svg" alt="pinterst"></a></li>
-        </ul>
-       </li>
-       <li class="cart"><a href="#"><i class="ri-shopping-cart-line"></i><em> (0) </em></a></li>
-       <li class="user"><a href="#"><i class="ri-user-fill"></i></a></li>
-      </ul>
+
+      <?php include $_SERVER['DOCUMENT_ROOT']."/common_template/include/info.php"; ?>
+      
 
       <div class="mobile-btn-wrapper">
         <div class="mobile-btn not-active">
@@ -306,7 +296,8 @@
       </div>
     </section>
     <!---------------------- Footer Section ------------------------>
-    <footer>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/common_template/include/footer.php"; ?>
+    <!-- <footer>
       <div class="container">
         <div class="footer-upper">
           <div class="footer-logo">
@@ -330,9 +321,8 @@
           <span class="footer-copy">&copy; Copyright 2023</span>
           <span class="byline">Powered by <a href="#">MongProject- Develope By victory</a></span>
         </div>
-
       </div>
-    </footer>
+    </footer> -->
 
     <div class="top-btn">
       <span>TOP</span>
