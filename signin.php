@@ -42,16 +42,37 @@
      </div>
     </header>
 
-    <form action="/common_template/signin.php" method="post" class="form">
+    <form action="/common_template/php/login.php" method="post" class="form" name="loginForm">
       <h2>SIGN IN</h2>
       <p><input type="text" name="id" placeholder="아이디"></p>
       <p><input type="password" name="pwd" placeholder="비밀번호"></p>
-      <p class="smbtn"><input type="submit" value="로그인 하기"></p>
+      <p class="smbtn"><input class="sbt" type="button" value="로그인 하기"></p>
       <p class="line"></p>
       <p class="is-member">
         <b>아직 회원이 아니세요?</b> | <a href="/common_template/signup.html">회원가입 하기</a>
       </p> 
     </form>
   </div>
+
+  <script>
+    const loginBtn = document.querySelector('.sbt');
+    loginBtn.addEventListener('click', loginCheck);
+    
+    function loginCheck(){
+      if(!document.loginForm.id.value){
+        alert('아이디를 입력해 주세요.');
+        return;
+      }
+
+      if(!document.loginForm.pwd.value){
+        alert('비밀번호를 입력해 주세요.');
+        return;
+      }
+      document.loginForm.submit();
+
+    }
+
+
+  </script>
 </body>
 </html>

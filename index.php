@@ -37,7 +37,7 @@
     <!------------------ Header  ------------------>
    <header id="header" class="header">
      <div class="container">
-      
+
 
       <?php include $_SERVER['DOCUMENT_ROOT']."/common_template/include/nav.php"; ?>
       <div class="logo">
@@ -55,6 +55,10 @@
         </div>
       </div>
 
+        <div class="mobile-menu">
+        <?php include $_SERVER['DOCUMENT_ROOT']."/common_template/include/nav.php"; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT']."/common_template/include/info.php"; ?>
+        </div>
      </div>
     </header>
 

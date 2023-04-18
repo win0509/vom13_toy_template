@@ -10,6 +10,7 @@
  header .container > *{
   display: none;
  }
+
 header .logo{
  display: flex;
  justify-content: flex-start;
@@ -18,6 +19,30 @@ header .logo{
   display: flex;
   justify-content: flex-end;
  }
+
+
+ header .mobile-menu{
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #eee;
+}
+header .nav-lists{
+  flex-direction: column;
+}
+header .nav-lists li{
+  display: flex;
+}
+header .nav-lists li a{
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  padding: 1rem 0;
+}
+
+
  .overlay{
   position: absolute;
   left: 0;
